@@ -1,4 +1,4 @@
-import { Headphones, Search, CassetteTape, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat } from "lucide-react";
+import { Headphones, Search, CassetteTape, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, PlaySquare, Mic2, Database, Speaker, Volume1, TabletSmartphone } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -165,7 +165,7 @@ export default function Home() {
 
         <div className="flex flex-col">
 
-          <strong className="font-normal">Dont'n wanna Sleep</strong>
+          <strong className="font-normal">Don't wanna Sleep</strong>
           <span className="text-xs text-zinc-400">Swif7</span>
 
           </div>
@@ -187,12 +187,29 @@ export default function Home() {
 
           </div>
 
-          <div></div>
+          <div className="flex items-center gap-2">
+            <span className="text-zinc-400 text-xs">0:21</span>
+              <div className="h-1 rounded-full w-80 bg-zinc-600">
+                <div className="h-1 rounded-full bg-zinc-200 w-12"></div>
+              </div>
+            <span className="text-zinc-400 text-xs">3:11</span>
+          </div>
         
         </div>
+          
+        <div className="flex items-center gap-3">
+          <PlaySquare size={20}/>
+          <Mic2 size={20}/>
+          <Database size={20}/>
+          <Speaker size={20}/>
+          <div className="flex items-center gap-2">
 
-        <div>
-
+          <Volume1 size={20}/>
+            <div className="h-1 rounded-full w-20 bg-zinc-600">
+                <div className="h-1 rounded-full bg-zinc-200 w-8"></div>
+            </div>
+          </div>
+          <TabletSmartphone size={20}/>  
         </div>
 
       </footer>
