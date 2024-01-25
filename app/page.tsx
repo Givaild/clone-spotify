@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Circles } from "./components/sidebar/circles";
 import { IconsSidebar } from "./components/sidebar/iconsSidebar";
 import { Playlist } from "./components/sidebar/playlist";
+import { TopButtons } from "./components/main/topButtons";
+import { Recent } from "./components/main/recent";
+import { MadeFor } from "./components/main/madeFor";
 
 export default function Home() {
   return (
@@ -16,123 +19,30 @@ export default function Home() {
           
         </aside>
         <main className="flex-1 p-6">
-          <div className="flex items-center gap-3">
-
-            <button className="rounded-full bg-black/40 p-1">
-              <ChevronLeft/>
-            </button>
-
-            <button className="rounded-full bg-black/40 p-1">
-              <ChevronRight/>
-            </button>
-
-          </div>
+          <TopButtons/>
 
           <h1 className="font-semibold text-3xl mt-5">Bom Dia</h1>
 
           <div className="grid grid-cols-3 gap-4 mt-4">
-            <a className="bg-white/10 group rounded flex items-center gap-4 hover:bg-white/20 transition-colors">
-              
-              <Image src="/album.jpeg" width={104} height={104} alt="capa do disco"/>
-              <strong>BE Swif7</strong>
-
-              <button className=" w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-              <Play />
-
-              </button>
-              </a>
-            <a className="bg-white/10 group rounded flex items-center gap-4 hover:bg-white/20 transition-colors">
-              
-              <Image src="/album.jpeg" width={104} height={104} alt="capa do disco"/>
-              <strong>BE Swif7</strong>
-              <button className=" w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-              <Play />
-
-              </button>
-
-              </a>
-            <a className="bg-white/10 group rounded flex items-center gap-4 hover:bg-white/20 transition-colors">
-              
-              <Image src="/album.jpeg" width={104} height={104} alt="capa do disco"/>
-              <strong>BE Swif7</strong>
-              
-              <button className=" w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-              <Play />
-
-              </button>
-
-              </a>
-            <a className="bg-white/10 group rounded flex items-center gap-4 hover:bg-white/20 transition-colors">
-              
-              <Image src="/album.jpeg" width={104} height={104} alt="capa do disco"/>
-              <strong>BE Swif7</strong>
-              
-              <button className=" w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-              <Play />
-
-              </button>
-
-              </a>
-            <a className="bg-white/10 group rounded flex items-center gap-4 hover:bg-white/20 transition-colors">
-              
-              <Image src="/album.jpeg" width={104} height={104} alt="capa do disco"/>
-              <strong>BE Swif7</strong>
-
-              <button className=" w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-              <Play />
-
-              </button>
-              </a>
-            <a className="bg-white/10 group rounded flex items-center gap-4 hover:bg-white/20 transition-colors">
-              
-              <Image src="/album.jpeg" width={104} height={104} alt="capa do disco"/>
-              <strong>BE Swif7</strong>
-              
-              <button className=" w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-              <Play />
-
-              </button>
-              </a>
-            
+          
+            <Recent/>
+            <Recent/>
+            <Recent/>
+            <Recent/>
+            <Recent/>
+            <Recent/>        
+          
             </div>  
             <h2 className="font-semibold text-2xl mt-5">Feito para Gil Andrade</h2>
 
             <div className="grid grid-cols-5 gap-4 mt-4">
 
-              <a className="bg-white/5 p-3 rounded-md hover:bg-white/10">
+              <MadeFor/>
+              <MadeFor/>
+              <MadeFor/>
+              <MadeFor/>
+              <MadeFor/>
 
-              <Image src="/album.jpeg" className="w-full" width={120} height={120} alt="capa do disco"/> 
-                <strong className="font-semibold">Daily mix 1</strong>
-                <span className="text-sm text-zinc-400">Flo Rida,B.o.B, Sofia Reys e mais</span>
-              </a>
-
-              <a className="bg-white/5 p-3 rounded-md hover:bg-white/10">
-
-              <Image src="/album.jpeg" className="w-full" width={120} height={120} alt="capa do disco"/> 
-                <strong className="font-semibold">Daily mix 1</strong>
-                <span className="text-sm text-zinc-400">Flo Rida,B.o.B, Sofia Reys e mais</span>
-              </a>
-
-              <a className="bg-white/5 p-3 rounded-md hover:bg-white/10">
-
-              <Image src="/album.jpeg" className="w-full" width={120} height={120} alt="capa do disco"/> 
-                <strong className="font-semibold">Daily mix 1</strong>
-                <span className="text-sm text-zinc-400">Flo Rida,B.o.B, Sofia Reys e mais</span>
-              </a>
-
-              <a className="bg-white/5 p-3 rounded-md hover:bg-white/10">
-
-              <Image src="/album.jpeg" className="w-full" width={120} height={120} alt="capa do disco"/> 
-                <strong className="font-semibold">Daily mix 1</strong>
-                <span className="text-sm text-zinc-400">Flo Rida,B.o.B, Sofia Reys e mais</span>
-              </a>
-
-              <a className="bg-white/5 p-3 rounded-md hover:bg-white/10">
-
-              <Image src="/album.jpeg" className="w-full" width={120} height={120} alt="capa do disco"/> 
-                <strong className="font-semibold">Daily mix 1</strong>
-                <span className="text-sm text-zinc-400">Flo Rida,B.o.B, Sofia Reys e mais</span>
-              </a>
             </div>
 
         </main>
