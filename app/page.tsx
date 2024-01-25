@@ -1,4 +1,3 @@
-import { Headphones, Search, CassetteTape, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, PlaySquare, Mic2, Database, Speaker, Volume1, TabletSmartphone } from "lucide-react";
 import Image from "next/image";
 import { Circles } from "./components/sidebar/circles";
 import { IconsSidebar } from "./components/sidebar/iconsSidebar";
