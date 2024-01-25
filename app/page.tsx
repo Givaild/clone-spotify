@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Circles } from "./components/sidebar/circles";
 import { IconsSidebar } from "./components/sidebar/iconsSidebar";
 import { Playlist } from "./components/sidebar/playlist";
