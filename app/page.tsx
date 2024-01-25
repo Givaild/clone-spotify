@@ -1,6 +1,7 @@
 import { Headphones, Search, CassetteTape, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, PlaySquare, Mic2, Database, Speaker, Volume1, TabletSmartphone } from "lucide-react";
 import Image from "next/image";
 import { Circles } from "./components/sidebar/circles";
+import { IconsSidebar } from "./components/sidebar/iconsSidebar";
 
 export default function Home() {
   return (
@@ -8,20 +9,7 @@ export default function Home() {
       <div className="flex flex-1">
         <aside className="w-72 bg-zinc-950 p-6">
           <Circles/>
-          <nav className="space-y-5 mt-10">
-            <a href="" className="flex items-center gap-3 text-sm font-semibold text-zinc-200">
-              <Headphones />
-              Início
-            </a>
-            <a href="" className="flex items-center gap-3 text-sm font-semibold text-zinc-200">
-              <Search />
-              Buscar
-            </a>
-            <a href="" className="flex items-center gap-3 text-sm font-semibold text-zinc-200">
-              <CassetteTape />
-              Sua Biblioteca
-            </a>
-          </nav>
+          <IconsSidebar/>
           <nav className="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
             <a href="" className="text-sm text-zinc-500 hover:text-zinc-100">Self control</a>
             <a href="" className="text-sm text-zinc-500 hover:text-zinc-100">Piseiro</a>
